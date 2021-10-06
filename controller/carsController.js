@@ -5,7 +5,6 @@ exports.cars = (req, res) => {
 
 
 exports.id = (req, res) => {
-    const data = require('../public/data/cars.json')
-    res.json(data);
+    res.sendfile('public/data/cars.html')
 
 }

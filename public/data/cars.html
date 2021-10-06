@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <h2 style="text-align: center;"> hej hej Welcome to ACME Car Dealership</h2>
+    <h2 style="text-align: center;">Id Welcome to ACME Car Dealership</h2>
     <div id="mycars"></div>
 
     <script>
@@ -33,8 +33,7 @@
             for (let i = 0; i < cars.length; i++) {
                 console.log(i);
                 const listItem = document.createElement('li');
-                listItem.textContent = cars[i].Model;
-              
+                listItem.textContent = (`${cars[i].Make} ${cars[i].Model} ${cars[i].Year}`);
                 myList.appendChild(listItem);
             };
 

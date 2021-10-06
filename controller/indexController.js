@@ -1,3 +1,3 @@
 exports.index = (req, res) => {
-    res.send('im alive');
+    res.sendfile('public/data/cars.html');
 }

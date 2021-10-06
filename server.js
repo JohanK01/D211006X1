@@ -10,7 +10,8 @@ const carsRouter = require('./routes/cars')
 app.use(express.static('public'));
 
 
-app.use('/', carsRouter);
+app.use('/', indexRouter);
+app.use('/cars', carsRouter)
 
 app.listen(port);
 console.log('server upp and running on port: ' + port);

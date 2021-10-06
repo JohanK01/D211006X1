@@ -1,3 +1,4 @@
-exports.index = (req, res) => {
-    res.send('Cars is alive');
+exports.home = (req, res) => {
+    res.sendfile('public/data/cars.html');
 }
+
